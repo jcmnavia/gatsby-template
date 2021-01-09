@@ -1,0 +1,21 @@
+// BOOTSTRAP
+@import "~bootstrap/scss/bootstrap";
+
+// CONFIG
+@import "modules/_vars.scss";
+
+// CONFIG MODULES
+@import "modules/_position.scss";
+@import "modules/_normalize.scss";
+@import "modules/_typography.scss";
+@import "modules/_app.scss";
+@import "modules/_animated.scss";
+
+// COMPONENTS
+@import "components/_header.scss";
+@import "components/_footer.scss";
+@import "components/_main.scss";
+@import "components/_ui.scss";
+
+// BREAKPOINTS
+@import "modules/_breakpoints.scss";

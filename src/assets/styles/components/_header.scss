@@ -1,0 +1,48 @@
+header {
+  padding-bottom: 5px;
+  padding-top: 5px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(30px);
+}
+
+.main-navbar {
+  .navbar-collapse {
+    height: 100vh;
+  }
+  &--toggler {
+    border: none !important;
+    &:focus {
+      outline: 0;
+    }
+  }
+  &--nav {
+    .nav-item {
+      // @include fonts($colorBlack, $fontRegular, 16);
+      cursor: pointer !important;
+      position: relative;
+      transition: all 0.3s ease-in-out;
+      text-align: right;
+      &:before {
+        // border-bottom: 1px solid $colorDefaultHover;
+        bottom: 0;
+        content: "";
+        left: 0;
+        position: absolute;
+        transition: all 0.25s linear;
+        width: 0;
+      }
+
+      &:hover {
+        // color: $colorDefaultHover !important;
+        &:before {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
