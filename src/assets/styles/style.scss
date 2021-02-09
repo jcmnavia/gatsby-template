@@ -6,10 +6,10 @@
 
 // CONFIG MODULES
 @import "modules/_position.scss";
-@import "modules/_normalize.scss";
+@import '~normalize.css/normalize.css';
 @import "modules/_typography.scss";
 @import "modules/_app.scss";
-@import "modules/_animated.scss";
+@import '~animate.css/animate.css';
 
 // COMPONENTS
 @import "components/_header.scss";
