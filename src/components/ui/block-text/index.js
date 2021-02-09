@@ -1,15 +1,27 @@
 import React from "react"
-import ReactHtmlParser from "react-html-parser"
+import BlockContent, {
+  defaultSerializers,
+} from "@sanity/block-content-to-react"
 
-const BlockText = ({ data, tag: Tag = null, className = "" }) => {
-  return data?.map(parr => {
-    return parr?.children.map(child => {
-      if (Tag) {
-        return <Tag className={className}>{ReactHtmlParser(child.text)}</Tag>
-      }
-      return ReactHtmlParser(child.text)
-    })
-  })
+const BlockText = ({ data, hasContainer = true, className = "" }) => {
+  const serializers = {
+    ...defaultSerializers,
+    types: {
+      undefined: props => <> {props.children} </>,
+      block: ({ children, node: { style: Tag } }) => {
+        if (Tag === "normal") {
+          Tag = "p"
+        }
+        if (!hasContainer) {
+          return <>{children}</>
+        }
+        return <Tag className={className}>{children}</Tag>
+      },
+    },
+    container: props => <> {props.children}</>,
+  }
+
+  return <>{data && <BlockContent blocks={data} serializers={serializers} />}</>
 }
 
 export default BlockText
