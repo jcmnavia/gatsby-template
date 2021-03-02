@@ -1,16 +1,16 @@
-import React from "react"
+import React from 'react'
 import BlockContent, {
   defaultSerializers,
-} from "@sanity/block-content-to-react"
+} from '@sanity/block-content-to-react'
 
-const BlockText = ({ data, hasContainer = true, className = "" }) => {
+const BlockText = ({ data, hasContainer = true, className = '' }) => {
   const serializers = {
     ...defaultSerializers,
     types: {
       undefined: props => <> {props.children} </>,
       block: ({ children, node: { style: Tag } }) => {
-        if (Tag === "normal") {
-          Tag = "p"
+        if (Tag === 'normal' || Tag === undefined) {
+          Tag = 'p'
         }
         if (!hasContainer) {
           return <>{children}</>
