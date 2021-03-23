@@ -6,7 +6,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 20;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(78, 12, 12, 0.199);
   backdrop-filter: blur(30px);
 }
 
@@ -30,7 +30,7 @@ header {
       &:before {
         // border-bottom: 1px solid $colorDefaultHover;
         bottom: 0;
-        content: "";
+        content: '';
         left: 0;
         position: absolute;
         transition: all 0.25s linear;
@@ -45,4 +45,20 @@ header {
       }
     }
   }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  header {
+    padding: 0;
+  }
+  .main-navbar {
+    .navbar-collapse {
+      height: 60px;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
 }

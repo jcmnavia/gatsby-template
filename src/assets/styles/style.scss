@@ -1,22 +1,21 @@
-// BOOTSTRAP
-@import "~bootstrap/scss/bootstrap";
+// EXTERNAL
+@import '~bootstrap/scss/bootstrap';
+@import '~normalize.css/normalize.css';
+@import '~animate.css/animate.css';
 
 // CONFIG
-@import "modules/_vars.scss";
-@import "~aos/dist/aos.css";
+@import 'modules/_vars.scss';
 
 // CONFIG MODULES
-@import "modules/_position.scss";
-@import "~normalize.css/normalize.css";
-@import "modules/_typography.scss";
-@import "modules/_app.scss";
-@import "~animate.css/animate.css";
+@import 'modules/_position.scss';
+@import 'modules/_typography.scss';
+@import 'modules/_app.scss';
 
 // COMPONENTS
-@import "components/_header.scss";
-@import "components/_footer.scss";
-@import "components/_main.scss";
-@import "components/_ui.scss";
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+@import 'components/_main.scss';
+@import 'components/_ui.scss';
 
 // BREAKPOINTS
-@import "modules/_breakpoints.scss";
+@import 'modules/_breakpoints.scss';

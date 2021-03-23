@@ -11,6 +11,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    'gatsby-remark-check-links',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -46,6 +47,38 @@ module.exports = {
     //     token: process.env.SANITY_TOKEN,
     //     graphqlTag: "default",
     //     watchMode: true,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-web-vitals',
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS,
+    //     metrics: [`FID`, `TTFB`, `LCP`, `CLS`, `FCP`],
+    //     eventCategory: 'Performance',
+    //     includeInDevelopment: false,
+    //     debug: false,
+    //   },
+    // },
+    // {
+    //   resolve: 'gatsby-plugin-google-tagmanager',
+    //   options: {
+    //     id: process.env.GOOGLE_TAG,
+    //     includeInDevelopment: false,
+    //     defaultDataLayer: { platform: 'gatsby' },
+    //     defaultDataLayer: function () {
+    //       return {
+    //         pageType: window.pageType,
+    //       }
+    //     },
+    //   },
+    // },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS,
+    //     head: false,
+    //     pageTransitionDelay: 0,
+    //     defer: false,
     //   },
     // },
   ],
