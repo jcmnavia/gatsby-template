@@ -2,7 +2,7 @@
   "name": "gatsby-rv-template",
   "private": true,
   "description": "A Gatsby template for landing pages",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Juan Camilo Marin Navia <jnavia@rvdev.com>",
   "dependencies": {
     "@react-hook/media-query": "^1.1.1",
@@ -64,9 +64,6 @@
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "lint": "eslint . --ext .js,.jsx,.ts,tsx"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,ts,tsx}": [
