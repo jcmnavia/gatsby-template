@@ -51,7 +51,6 @@ const NavbarCustom = () => {
             className="main-navbar--toggler p-0 w-0"
             onClick={toggle}
           />
-
           <Collapse isOpen={isOpen} navbar className="justify-content-end">
             <Nav className="main-navbar--nav mt-4 mt-md-0" navbar>
               <NavItem>

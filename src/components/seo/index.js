@@ -86,6 +86,8 @@ const SEO = ({ lang = 'en', meta = [], data }) => {
   )
 }
 
+export default SEO
+
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
@@ -109,5 +111,3 @@ SEO.propTypes = {
     }),
   }),
 }
-
-export default SEO
