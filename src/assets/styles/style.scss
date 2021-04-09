@@ -5,17 +5,13 @@
 
 // CONFIG
 @import 'modules/vars';
+@import 'modules/app';
 
 // CONFIG MODULES
 @import 'modules/mixins';
 @import 'modules/typography';
-@import 'modules/app';
 
 // COMPONENTS
+@import 'components/ui';
 @import 'components/header';
 @import 'components/footer';
-@import 'components/main';
-@import 'components/ui';
-
-// BREAKPOINTS
-@import 'modules/breakpoints';

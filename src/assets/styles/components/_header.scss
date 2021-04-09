@@ -28,7 +28,6 @@ header {
       transition: all 0.3s ease-in-out;
       text-align: right;
       &:before {
-        // border-bottom: 1px solid $colorDefaultHover;
         bottom: 0;
         content: '';
         left: 0;
