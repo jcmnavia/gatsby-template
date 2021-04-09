@@ -1,5 +1,4 @@
-import { Link } from "gatsby"
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from 'react'
 import {
   Container,
   Collapse,
@@ -9,11 +8,11 @@ import {
   Nav,
   NavItem,
   NavbarText,
-} from "reactstrap"
-import classnames from "classnames"
-import AnchorLink from "react-anchor-link-smooth-scroll"
+} from 'reactstrap'
+import classnames from 'classnames'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
-const NavbarPremier = () => {
+const NavbarCustom = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -29,14 +28,14 @@ const NavbarPremier = () => {
   const toggle = () => setIsOpen(!isOpen)
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll)
+    window.addEventListener('scroll', handleScroll)
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      window.removeEventListener('scroll', handleScroll)
     }
   })
 
   return (
-    <header className={classnames({ scrolled: scrolled })}>
+    <header className={classnames({ scrolled })}>
       <Container fluid>
         <Navbar light className="main-navbar" sticky="top" expand="lg">
           <NavbarBrand
@@ -62,9 +61,9 @@ const NavbarPremier = () => {
               </NavItem>
             </Nav>
             <NavbarText className="px-0 px-md-3 d-block d-lg-inline text-right">
-              <Link href={`tel:`} className="btn btn-primary m-auto text-right">
+              <a href="tel:" className="btn btn-primary m-auto text-right">
                 Phone number
-              </Link>
+              </a>
             </NavbarText>
           </Collapse>
         </Navbar>
@@ -73,4 +72,4 @@ const NavbarPremier = () => {
   )
 }
 
-export default NavbarPremier
+export default NavbarCustom

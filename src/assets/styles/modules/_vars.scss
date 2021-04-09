@@ -11,12 +11,13 @@ $colorDark: #000;
 /* END COLORS */
 
 /* FONTS */
-$fontBlack: "", sans-serif;
-$fontBold: "", sans-serif;
-$fontMedium: "", sans-serif;
-$fontRegular: "", sans-serif;
-$fontLight: "", sans-serif;
-$fontThin: "", sans-serif;
+// Call Variable fonts declared in _vars.scss
+$fontBlack: '', sans-serif;
+$fontBold: '', sans-serif;
+$fontMedium: '', sans-serif;
+$fontRegular: '', sans-serif;
+$fontLight: '', sans-serif;
+$fontThin: '', sans-serif;
 
 /* END FONTS */
 

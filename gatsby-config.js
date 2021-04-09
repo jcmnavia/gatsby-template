@@ -24,6 +24,18 @@ module.exports = {
         icon: `src/assets/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.js$|\.jsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
+      },
+    },
     // {
     //   resolve: "gatsby-plugin-sanity-image",
     //   options: {

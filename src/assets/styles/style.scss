@@ -4,18 +4,18 @@
 @import '~animate.css/animate.css';
 
 // CONFIG
-@import 'modules/_vars.scss';
+@import 'modules/vars';
 
 // CONFIG MODULES
-@import 'modules/_position.scss';
-@import 'modules/_typography.scss';
-@import 'modules/_app.scss';
+@import 'modules/mixins';
+@import 'modules/typography';
+@import 'modules/app';
 
 // COMPONENTS
-@import 'components/_header.scss';
-@import 'components/_footer.scss';
-@import 'components/_main.scss';
-@import 'components/_ui.scss';
+@import 'components/header';
+@import 'components/footer';
+@import 'components/main';
+@import 'components/ui';
 
 // BREAKPOINTS
-@import 'modules/_breakpoints.scss';
+@import 'modules/breakpoints';

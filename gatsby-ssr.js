@@ -1,5 +1,4 @@
-const React = require("react")
-const Layout = require("./src/components/layout").default
+const React = require('react')
 
 exports.wrapPageElement = ({ element, props }) => {
   return <div {...props}>{element}</div>

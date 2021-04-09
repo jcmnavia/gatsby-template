@@ -1,23 +1,24 @@
-@mixin placeholder($color, $family, $size, $weight: normal) {
+@mixin placeholder($color, $family, $size, $line-height, $weight: normal) {
   ::-webkit-input-placeholder {
-    @include fonts($color, $family, $size, $weight);
+    @include fonts($color, $family, $size, $line-height, $weight);
   }
   :-moz-placeholder {
-    @include fonts($color, $family, $size, $weight);
+    @include fonts($color, $family, $size, $line-height, $weight);
   }
   ::-moz-placeholder {
-    @include fonts($color, $family, $size, $weight);
+    @include fonts($color, $family, $size, $line-height, $weight);
   }
   :-ms-input-placeholder {
-    @include fonts($color, $family, $size, $weight);
+    @include fonts($color, $family, $size, $line-height, $weight);
   }
 }
 
-@mixin fonts($color, $family, $size, $weight: normal) {
+@mixin fonts($color, $family, $size, $line-height, $weight: normal) {
   color: $color;
   font-family: $family;
   font-size: rem($size);
   font-weight: $weight;
+  line-height: $line-height;
 }
 
 @function rem($px, $context: 16) {
